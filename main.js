@@ -5,10 +5,14 @@ let buttons = []
     $('form').on('submit', function(e){
         e.preventDefault()
         let input = $('form input')
-        let newRow = $('<li></li>')
-        $(`<p>${input.val()}</p>
-        <button type="button" class="unfinished"><img src="check.png" alt=""></button>`).appendTo(newRow)
-        $(newRow).appendTo('ul')
+        if (input.val().length >= 1) {
+            let newRow = $('<li></li>')
+            $(`<p>${input.val()}</p>
+            <button type="button" class="unfinished"><img src="check.png" alt=""></button>`).appendTo(newRow)
+            $(newRow).appendTo('ul')
+        } else {
+            alert('Digite o nome da tarefa')
+        }
         $(input).val('')
     })
 
