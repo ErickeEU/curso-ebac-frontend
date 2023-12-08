@@ -1,0 +1,92 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+}
+
+body {
+    background-color: #c1c9c8;
+}
+
+header {
+    background-color: #949a8e;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    padding: 1%;
+} header h1 {
+    font-size: 40px;
+}
+
+.container {
+    margin: 0 auto;
+    max-width: 1366px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+form {
+    margin: 1%;
+    width: 30%;
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: center;
+} form button {
+    padding: 2px;
+} form input {
+    max-width: 200px;
+    width: 100%;
+}
+
+ul {
+    display: flex;
+    flex-direction: column;
+    margin: 1%;
+    width: 40%;
+} ul li {
+    border-bottom: 1px solid rgba(0, 0, 0, 0.4);
+    margin-bottom: 5px;
+    text-wrap: nowrap;
+    font-size: 24px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    overflow: hidden;
+    flex-wrap: wrap;
+} ul li button {
+    background-color: dodgerblue;
+    border: 1px solid #000;
+    cursor: pointer;
+    border-radius: 6px;
+    padding: 1px;
+    width: 40px;
+} ul li button img {
+    height: 20px;
+}
+
+.unfinished {
+    background-color: rgb(123, 130, 143);
+}
+
+.finished {
+    background-color: forestgreen;
+}
+
+.textnotfinished {
+    text-decoration: none;
+    
+} .textfinished p {
+    color: rgba(0, 0, 0, 0.5);
+}
+
+.textfinished {
+    text-decoration: line-through;
+}
+
+#list-container {
+    background-color: #c1c9c8;
+}
