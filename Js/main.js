@@ -16,14 +16,14 @@ $(document).ready(function(){
             },
             cpf: {
                 required: true,
-                minlength: 11 
+                minlength: 14
             }, 
             endereço: {
                 required: true
             },
             cep: {
                 required: true,
-                minlength: 7
+                minlength: 9
             }
         },
         messages: {
