@@ -6,7 +6,7 @@ document.addEventListener('DOMContentLoaded', function(){
     const followers = document.getElementById('followers')
     const following = document.getElementById('following')
     const profile = document.getElementById('profile-link')
-    const endpoint = 'https://api.github.com/users/ogiansouza'
+    const endpoint = 'https://api.github.com/users/ErickeEU'
 
     fetch(endpoint)
     .then(function(response){
