@@ -10,7 +10,12 @@ document.addEventListener('DOMContentLoaded', function(){
 
     fetch(endpoint)
     .then(function(response){
-        return response.json()
+        if (response.ok) {
+            console.log('Sucesso')
+            return response.json()
+        } else {
+            alert('Ocorreu um erro. Tente novamente mais tarde.')
+        }
     })
     .then(function(json){
         avatar.src = json.avatar_url
@@ -21,7 +26,5 @@ document.addEventListener('DOMContentLoaded', function(){
         following.innerText = json.following
         profile.href = json.html_url
     })
-    .catch(function(erro){
-        alert('Ocorreu um erro, tente novamente mais tarde.')
-    })
+
 })
