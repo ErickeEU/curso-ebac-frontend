@@ -22,6 +22,6 @@ document.addEventListener('DOMContentLoaded', function(){
         profile.href = json.html_url
     })
     .catch(function(erro){
-        alert('vamo dançar tudo nu tudo nu tudo co dedo no cu menos eu')
+        alert('Ocorreu um erro, tente novamente mais tarde.')
     })
 })
